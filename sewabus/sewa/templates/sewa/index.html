@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'base.html' %}
 
-     <title>sewa</title>
-<!-- 
-Hydro Template 
-http://www.templatemo.com/tm-509-hydro
--->
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+{% load static %}
 
-     <link rel="stylesheet" href="../statik/sewa/css/bootstrap.min.css">
-     <link rel="stylesheet" href="../statik/sewa/css/magnific-popup.css">
-     <link rel="stylesheet" href="../statik/sewa/css/font-awesome.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="../statik/sewa/css/templatemo-style.css">
-</head>
-<body>
+{% block content %}
 
      <!-- PRE LOADER -->
      <section class="preloader">
@@ -43,16 +24,16 @@ http://www.templatemo.com/tm-509-hydro
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="/home" class="navbar-brand">Hydro</a>
+                    <a href="/" class="navbar-brand">BOCKUS</a>
                </div>
 
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="index.html#home" class="smoothScroll">Home</a></li>
-                         <li><a href="index.html#about" class="smoothScroll">About</a></li>
-                         <li><a href="index.html#blog" class="smoothScroll">Blog</a></li>
-                         <li><a href="index.html#work" class="smoothScroll">Our Work</a></li>
+                         <li><a href="/" class="smoothScroll">Home</a></li>
+                         <li><a href="/sewa" class="smoothScroll">Sewa Bus</a></li>
+                         <li><a href="/paket" class="smoothScroll">Paket Wissata</a></li>
+                         <li><a href="index.html#work" class="smoothScroll">Abaout</a></li>
                          <li><a href="index.html#contact" class="smoothScroll">Contacts</a></li>
                     </ul>
 
@@ -69,28 +50,195 @@ http://www.templatemo.com/tm-509-hydro
 
 
      <!-- BLOG HEADER -->
-     <section id="blog-header" data-stellar-background-ratio="0.5">
+     <section id="blog-header" data-stellar-background-ratio="0.3">
           <div class="overlay"></div>
           <div class="container">
                <div class="row">
-
                     <div class="col-md-offset-1 col-md-5 col-sm-12">
-                         <h2>Do you Know What Thing Really Makes Artist Nowadays?</h2>
+                         <h2>SILAHKAN PILIH BUS YANG ANDA INGIKAN</h2>
+                         
                     </div>
+                    <!-- INI UNTUK LINK KE YOUTUBE -->
+                    
                     
                </div>
           </div>
      </section>
-
-
+     <br>
+     <div class="w3-container w3-teal" >
+          <div class="w3-container w3-blue w3-center">
+          <h1>SEWA BUS DALAM KOTA </h1>
+          </div>
+        </div>
+        <br>
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/satu.jpg' %}" style="width:100%">
+              <div class="w3-center">
+                <h2>Bandung - yogyakarta</h2>
+                <h4>Rp. 3.200.000</h4>
+                <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+              </div>
+              <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/dua.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Bandung - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/tiga.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Bandung - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/empat.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Bandung - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/lima.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Bandung - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/enam.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+                <h2>Bandung - yogyakarta</h2>
+                <h4>Rp. 3.200.000</h4>
+                <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+        <br>
+     <div class="w3-container w3-teal" >
+          <div class="w3-container w3-blue w3-center">
+          <h1>SEWA BUS LUAR KOTA </h1>
+          </div>
+        </div>
+        <br>
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/satu.jpg' %}" style="width:100%">
+              <div class="w3-center">
+                <h2>Bandung - yogyakarta</h2>
+                <h4>Rp. 3.200.000</h4>
+                <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+              </div>
+              <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/dua.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Malang - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/tiga.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Surabaya - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/empat.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Semarang - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/lima.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+               <h2>Pati - yogyakarta</h2>
+               <h4>Rp. 3.200.000</h4>
+               <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+             </div>
+             <br>
+            </div>
+          </div>
+        
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="{% static 'sewabus/images/enam.jpeg' %}" style="width:100%">
+              <div class="w3-center">
+                <h2>Solo - yogyakarta</h2>
+                <h4>Rp. 3.200.000</h4>
+                <a href="blog-detail.html" class="btn section-btn">View Detail</a>
+                <a href="#about" class="btn yellow section-btn blue">Boking Bus</a>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+        
+        <br><br><br>
      <!-- BLOG DETAIL -->
-     <section id="blog-detail" data-stellar-background-ratio="0.5">
+     <!-- <section id="blog-detail" data-stellar-background-ratio="0.5">
           <div class="container">
                <div class="row">
 
-                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12"> -->
                          <!-- BLOG THUMB -->
-                         <div class="blog-detail-thumb">
+                         <!-- <div class="blog-detail-thumb">
                               <div class="blog-image">
                                    <img src="images/blog-detail-image.jpg" class="img-responsive" alt="Blog Image">
                               </div>
@@ -123,7 +271,7 @@ http://www.templatemo.com/tm-509-hydro
                </div>
           </div>
      </section>
-
+ -->
 
      <!-- FOOTER -->
      <footer data-stellar-background-ratio="0.5">
@@ -248,13 +396,4 @@ http://www.templatemo.com/tm-509-hydro
           </div>
      </section>
 
-     <!-- SCRIPTS -->
-     <script src="../statik/sewa/js/jquery.js"></script>
-     <script src="../statik/sewa/js/bootstrap.min.js"></script>
-     <script src="../statik/sewa/js/jquery.stellar.min.js"></script>
-     <script src="../statik/sewa/js/jquery.magnific-popup.min.js"></script>
-     <script src="../statik/sewa/js/smoothscroll.js"></script>
-     <script src="../statik/sewa/js/custom.js"></script>
-
-</body>
-</html>
+{% endblock %}

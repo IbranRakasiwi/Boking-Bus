@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-     <title>sewa bus</title>
-
-<!-- Hydro Template 
-http://www.templatemo.com/tm-509-hydro -->
-
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="static/sewabus/css/bootstrap.min.css">
-     <link rel="stylesheet" href="static/sewabus/css/magnific-popup.css">
-     <link rel="stylesheet" href="stati/sewabus/css/font-awesome.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="static/sewabus/css/templatemo-style.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
      <!-- PRE LOADER -->
      <section class="preloader">
@@ -73,7 +52,6 @@ http://www.templatemo.com/tm-509-hydro -->
           <div class="overlay"></div>
           <div class="container">
                <div class="row">
-
                     <div class="col-md-6 col-sm-12">
                          <div class="home-info">
                               <h1>SELAMAT DATANG DI WEB BOOKING BUS</h1>
@@ -173,11 +151,11 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- BLOG THUMB -->
                          <div class="media blog-thumb">
                               <div class="media-object media-left">
-                                   <a href="blog-detail.html"><img src="https://lh3.googleusercontent.com/proxy/ZqFsMF9gQFu3bLw-PcEJvoMqzI5Qs981IoNayILX12TQCdISLi_Zxea0S_eEHw3MRFzZDdm5IFAICXwCk3DGAdZyIfugONDxJ0TnIICYWBYXuSuVvbq1ye1ZybyL1-FezrNPcg" class="img-responsive" alt=""></a>
+                                   <a href="blog-detail.html"><img src="{% static 'sewabus/images/lima.jpeg' %}" class="img-responsive" alt=""></a>
                               </div>
                               <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> December 22, 2017</small>
                                    <h3><a href="blog-detail.html">PT SURYA INDAH</a></h3>
+                                   <small><i class="fa fa-clock-o"></i> December 22, 2017</small>
                                    <p>Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.</p>
                                    <a href="blog-detail.html" class="btn section-btn">View Detail</a>
                               </div>
@@ -188,11 +166,11 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- BLOG THUMB -->
                          <div class="media blog-thumb">
                               <div class="media-object media-left">
-                                   <a href="blog-detail.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb-mpE8LDtwbLMRDYQGWZYEpw7mPcQlhfDvw&usqp=CAU" class="img-responsive" alt=""></a>
+                                   <a href="blog-detail.html"><img src="{% static 'sewabus/images/empat.jpeg' %}" class="img-responsive" alt=""></a>
                               </div>
                               <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> December 18, 2017</small>
                                    <h3><a href="blog-detail.html">PT SURYA ABADI</a></h3>
+                                   <small><i class="fa fa-clock-o"></i> December 18, 2017</small>
                                    <p>Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.</p>
                                    <a href="blog-detail.html" class="btn section-btn">View Detail</a>
                               </div>
@@ -203,11 +181,11 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- BLOG THUMB -->
                          <div class="media blog-thumb">
                               <div class="media-object media-left">
-                                   <a href="blog-detail.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9QuajibuDPnrbDOhUy3h2LmAdsSlYOF1irA&usqp=CAU" class="img-responsive" alt=""></a>
+                                   <a href="blog-detail.html"><img src="{% static 'sewabus/images/tiga.jpeg' %}" class="img-responsive" alt=""></a>
                               </div>
                               <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> December 14, 2017</small>
                                    <h3><a href="blog-detail.html">PT INDAH </a></a></h3>
+                                   <small><i class="fa fa-clock-o"></i> December 14, 2017</small>
                                    <p>Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.</p>
                                    <a href="blog-detail.html" class="btn section-btn">View Detail</a>
                               </div>
@@ -218,11 +196,11 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- BLOG THUMB -->
                          <div class="media blog-thumb">
                               <div class="media-object media-left">
-                                   <a href="blog-detail.html"><img src="https://lh3.googleusercontent.com/proxy/S0PxuAXnEj8HWpJjlTQOWRHdXLLD82rHk2eLhrmGTmqNoDG1ugJW8A3KCiG_-UJShkmkIXxQl6tJkDqY8wWYmsTeBIrJ51guqMW0IKI" class="img-responsive" alt=""></a>
+                                   <a href="blog-detail.html"><img src="{% static 'sewabus/images/satu.jpg' %}"  class="img-responsive" alt=""></a>
                               </div>
                               <div class="media-body blog-info">
-                                   <small><i class="fa fa-clock-o"></i> December 10, 2017</small>
                                    <h3><a href="blog-detail.html">PT GRAHA</a></h3>
+                                   <small><i class="fa fa-clock-o"></i> December 10, 2017</small>
                                    <p>Lorem ipsum dolor sit consectetur adipiscing morbi venenatis.</p>
                                    <a href="blog-detail.html" class="btn section-btn">View Detail</a>
                               </div>
@@ -250,7 +228,7 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- WORK THUMB -->
                          <div class="work-thumb">
                               <a href="images/work-image1.jpg" class="image-popup">
-                                   <img src="data:image/jpeg;base64,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" class="img-responsive" alt="Work">
+                                   <img src="{% static 'sewabus/images/enam.jpeg' %}" class="img-responsive" alt="Work">
 
                                    <div class="work-info">
                                         <h3>MADURA-SURABYA</h3>
@@ -264,7 +242,7 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- WORK THUMB -->
                          <div class="work-thumb">
                               <a href="images/work-image2.jpg" class="image-popup">
-                                   <img src="https://i.dlpng.com/static/png/6414729_preview.png" class="img-responsive" alt="Work">
+                                   <img src="{% static 'sewabus/images/satu.jpg' %}"  class="img-responsive" alt="Work">
 
                                    <div class="work-info">
                                         <h3>JOGJA-PALEMBANG</h3>
@@ -278,7 +256,7 @@ http://www.templatemo.com/tm-509-hydro -->
                          <!-- WORK THUMB -->
                          <div class="work-thumb">
                               <a href="images/work-image3.jpg" class="image-popup">
-                                   <img src="https://lh3.googleusercontent.com/proxy/RMsrCU23U9j_yhCBITCLqyxP8XQrzLIlRi-NyvFOv7kjA2F0PiQfmiVHmTkYwH-gZPieV2kCDExCxlZTJ6cgGy6dj1DX4JAWnALEBP6p0gMjXlk6mAdMVh7o" class="img-responsive" alt="Work">
+                                   <img src="{% static 'sewabus/images/dua.jpeg' %}" class="img-responsive" alt="Work">
 
                                    <div class="work-info">
                                         <h3>JAKARTA-SEMARANG</h3>
@@ -291,8 +269,8 @@ http://www.templatemo.com/tm-509-hydro -->
                     <div class="col-md-3 col-sm-6">
                          <!-- WORK THUMB -->
                          <div class="work-thumb">
-                              <a href="images/work-image4.jpg" class="image-popup">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QgMqXwZn9sLCG4mzq_AEOQdriU_ZracxpA&usqp=CAU" class="img-responsive" alt="Work">
+                              <a href="/sewa">
+                                   <img src="{% static 'sewabus/images/dua.jpeg' %}"class="img-responsive" alt="Work">
 
                                    <div class="work-info">
                                         <h3>SURABAYA-JOGJA</h3>
@@ -499,12 +477,4 @@ http://www.templatemo.com/tm-509-hydro -->
      </section>
 
      <!-- SCRIPTS -->
-     <script src="static/sewabus/js/jquery.js"></script>
-     <script src="static/sewabus/js/bootstrap.min.js"></script>
-     <script src="static/sewabus/js/jquery.stellar.min.js"></script>
-     <script src="static/sewabus/js/jquery.magnific-popup.min.js"></script>
-     <script src="static/sewabus/js/smoothscroll.js"></script>
-     <script src="static/sewabus/js/custom.js"></script>
-
-</body>
-</html>
+{% endblock %}
