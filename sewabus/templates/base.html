@@ -23,9 +23,19 @@ http://www.templatemo.com/tm-509-hydro -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!-- <style>
-     .w3-sidebar a {font-family: "Roboto", sans-serif}
-     body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+     
+
+     <!-- ini admin -->
+     <link rel="stylesheet" href="{% static 'asset/vendors/iconfonts/mdi/css/materialdesignicons.min.css' %}">
+            <link rel="stylesheet" href="{% static 'asset/vendors/iconfonts/ionicons/dist/css/ionicons.css' %}">
+            <link rel="stylesheet" href="{% static 'asset/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css' %}">
+            <link rel="stylesheet" href="{% static 'asset/vendors/css/vendor.bundle.base.css' %}">
+            <link rel="stylesheet" href="{% static 'asset/vendors/css/vendor.bundle.addons.css' %}">
+            <link rel="stylesheet" href="{% static 'asset/css/shared/style.css' %}">
+            <link rel="stylesheet" href="{% static 'asset/css/demo_1/style.css' %}">
+            <link rel="shortcut icon" href="{% static 'asset/images/favicon.ico' %}">
+
+     
      </style>
      <body class="w3-content" style="max-width:1200px">
      </head>
@@ -38,6 +48,28 @@ http://www.templatemo.com/tm-509-hydro -->
     <script src="{% static 'sewabus/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'sewabus/js/smoothscroll.js' %}"></script>
     <script src="{% static 'sewabus/js/custom.js' %}"></script>
+     <!-- INI TAMPILAN ADMIN -->
+
+     <script src="{% static 'asset/vendors/js/vendor.bundle.base.js' %}"></script>
+     <script src="{% static 'asset/vendors/js/vendor.bundle.addons.js' %}"></script>
+ <!-- endinject -->
+ <!-- Plugin js for this page-->
+ <!-- End plugin js for this page-->
+ <!-- inject:js -->
+     <script src="{% static 'asset/js/shared/off-canvas.js' %}"></script>
+     <script src="{% static 'asset/js/shared/misc.js' %}"></script>
+ <!-- endinject -->
+ <!-- Custom js for this page-->
+     <script src="{% static 'asset/js/demo_1/dashboard.js' %}"></script>
+ <!-- End custom js for this page-->
+     <script src="{% static 'asset/js/shared/jquery.cookie.js' %}" type="text/javascript"></script>
+    <script>
+         $('#tanggal').datepicker({
+		format: 'yyyy-mm-dd',
+		daysOfWeekDisabled: "0",
+		autoclose:true
+    });
+    </script>
 
 </body>
 </html>
