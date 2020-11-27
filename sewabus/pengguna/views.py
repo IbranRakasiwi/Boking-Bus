@@ -9,39 +9,44 @@ from django.contrib import messages
 def tampil(request):
     return render(request, 'pengguna/index.html')
 
-def murid(request):
-    return render(request, 'murid.html')
+def user(request):
+   
+    return render(request, 'pengguna/user.html')
+
+def tabel (request):
+   
+    return render(request, 'pengguna/tabel.html')
 
 # PENGAJAR
 
-def tampilguru(request):
-    if request.POST:
-        models.pengajar.objects.all()
+# def tampilguru(request):
+#     if request.POST:
+#         models.pengajar.objects.all()
         
-    ptampil = models.pengajar.objects.all()
-    return render(request, 'pengajar.html',
-		{ 'data': ptampil,
-		})
+#     ptampil = models.pengajar.objects.all()
+#     return render(request, 'pengajar.html',
+# 		{ 'data': ptampil,
+# 		})
 
-def detailguru(request, id):
-	gdetail = models.pengajar.objects.filter(pk=id).first()
-	return render(request, 'detailpengajar.html',
-		{ 'data': gdetail,
-		})
+# def detailguru(request, id):
+# 	gdetail = models.pengajar.objects.filter(pk=id).first()
+# 	return render(request, 'detailpengajar.html',
+# 		{ 'data': gdetail,
+# 		})
 
-# MURID
+# # MURID
 
-def tampilmurid(request):
-    if request.POST:
-        models.murid.objects.all()
+# def tampilmurid(request):
+#     if request.POST:
+#         models.murid.objects.all()
         
-    mtampil = models.murid.objects.all()
-    return render(request, 'murid.html',
-		{ 'data': mtampil,
-		})
+#     mtampil = models.murid.objects.all()
+#     return render(request, 'murid.html',
+# 		{ 'data': mtampil,
+# 		})
 
-def detailmurid(request, id):
-	mdetail = models.murid.objects.filter(pk=id).first()
-	return render(request, 'detailmurid.html',
-		{ 'data': mdetail,
-		})
+# def detailmurid(request, id):
+# 	mdetail = models.murid.objects.filter(pk=id).first()
+# 	return render(request, 'detailmurid.html',
+# 		{ 'data': mdetail,
+# 		})
