@@ -18,31 +18,31 @@
         <div class="sidebar-wrapper">
           <ul class="nav">
             <li class="nav-item  ">
-              <a class="nav-link" href="/pengguna">
+              <a class="nav-link" href="./dashboard.html">
                 <i class="material-icons">dashboard</i>
                 <p>Dashboard</p>
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="/pengguna/user">
+              <a class="nav-link" href="./user.html">
                 <i class="material-icons">person</i>
                 <p>User Profile</p>
               </a>
             </li>
-            <li class="nav-item active ">
-              <a class="nav-link" href="/pengguna/tabel">
+            <li class="nav-item ">
+              <a class="nav-link" href="./tables.html">
                 <i class="material-icons">content_paste</i>
                 <p>Table List</p>
               </a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="./typography.html">
+            <li class="nav-item active ">
+              <a class="nav-link" href="typo/">
                 <i class="material-icons">library_books</i>
                 <p>Typography</p>
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="/pengguna/icon">
+              <a class="nav-link" href="./icons.html">
                 <i class="material-icons">bubble_chart</i>
                 <p>Icons</p>
               </a>
@@ -67,7 +67,7 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
           <div class="container-fluid">
             <div class="navbar-wrapper">
-              <a class="navbar-brand" href="javascript:;">Table List</a>
+              <a class="navbar-brand" href="javascript:;">Typography</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
               <span class="sr-only">Toggle navigation</span>
@@ -131,84 +131,96 @@
         <!-- End Navbar -->
         <div class="content">
           <div class="container-fluid">
-            <div class="truexs">
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title ">Data Pemsan Bus</h4>
-                    <p class="card-category"> Data Bus Yang Sudah Dipesan</p>
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead class=" text-primary">
-                          <tr>
-                            <th>No </th>
-                            <th>Nama </th>
-                            <th>Pemesanan</th>
-                            <th>Alamat</th>
-                            <th>Merk</th>
-                            <th>No Hp</th>
-                            <th>Action</th>
-                          </tr>
-                          <tbody>
-                            {% for d in data %}
-                            <tr>
-                              <td>{{d.no_pasien}}</td>
-                              <td>{{d.nama_pasien}}</td>
-                              <td>{{d.jenis_kelamin}}</td>
-                              <td>{{d.alamat_pasien}}</td>
-                              <td>{{d.no_hp}}</td>
-                              <td style="text-align: center;">
-                                <a class="btn btn-sm btn-primary" href="/tabel{{d.id}}/">view</a>
-                                <a class="btn btn-sm btn-warning" href="/darah{{d.id}}/edit">edit</a>
-                                <a class="btn btn-sm btn-danger" href="/darah{{d.id}}/hapus"><i
-                                    class="glyphicon glyphicon-trash"></i></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                          {% endfor %}
-                      </table>
-                    </div>
-                  </div>
-                </div>
+            <div class="card">
+              <div class="card-header card-header-primary">
+                <h4 class="card-title">Material Dashboard Heading</h4>
+                <p class="card-category">Created using Roboto Font Family</p>
               </div>
-              <div class="col-md-12">
-                <div class="card card-plain">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title mt-0"> Table on Plain Background</h4>
-                    <p class="card-category"> Here is a subtitle for this table</p>
+              <div class="card-body">
+                <div id="typography">
+                  <div class="card-title">
+                    <h2>Typography</h2>
                   </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-hover">
-                        <tr>
-                          <th>No</th>
-                          <th>Nama </th>
-                          <th>Jenis Kelamin</th>
-                          <th>Alamat</th>
-                          <th>Merk</th>
-                          <th>No Hp</th>
-                          <th>Action</th>
-                        </tr>
-                        <tbody>
-                          {% for d in data %}
-                          <tr>
-                            <td>{{d.no_pasien}}</td>
-                            <td>{{d.nama_pasien}}</td>
-                            <td>{{d.jenis_kelamin}}</td>
-                            <td>{{d.alamat_pasien}}</td>
-                            <td>{{d.no_hp}}</td>
-                            <td style="text-align: center;">
-                              <a class="btn btn-sm btn-primary" href="/darah{{d.id}}/">view</a>
-                              <a class="btn btn-sm btn-warning" href="/darah{{d.id}}/edit">edit</a>
-                              <a class="btn btn-sm btn-danger" href="/darah{{d.id}}/hapus"><i
-                                  class="glyphicon glyphicon-trash"></i></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                        {% endfor %}
-                      </table>
+                  <div class="row">
+                    <div class="tim-typo">
+                      <h1>
+                        <span class="tim-note">Header 1</span>The Life of Material Dashboard </h1>
+                    </div>
+                    <div class="tim-typo">
+                      <h2>
+                        <span class="tim-note">Header 2</span>The Life of Material Dashboard</h2>
+                    </div>
+                    <div class="tim-typo">
+                      <h3>
+                        <span class="tim-note">Header 3</span>The Life of Material Dashboard</h3>
+                    </div>
+                    <div class="tim-typo">
+                      <h4>
+                        <span class="tim-note">Header 4</span>The Life of Material Dashboard</h4>
+                    </div>
+                    <div class="tim-typo">
+                      <h5>
+                        <span class="tim-note">Header 5</span>The Life of Material Dashboard</h5>
+                    </div>
+                    <div class="tim-typo">
+                      <h6>
+                        <span class="tim-note">Header 6</span>The Life of Material Dashboard</h6>
+                    </div>
+                    <div class="tim-typo">
+                      <p>
+                        <span class="tim-note">Paragraph</span>
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Quote</span>
+                      <blockquote class="blockquote">
+                        <p>
+                          I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
+                        </p>
+                        <small>
+                          Kanye West, Musician
+                        </small>
+                      </blockquote>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Muted Text</span>
+                      <p class="text-muted">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
+                      </p>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Primary Text</span>
+                      <p class="text-primary">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Info Text</span>
+                      <p class="text-info">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Success Text</span>
+                      <p class="text-success">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Warning Text</span>
+                      <p class="text-warning">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
+                      </p>
+                    </div>
+                    <div class="tim-typo">
+                      <span class="tim-note">Danger Text</span>
+                      <p class="text-danger">
+                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
+                    </div>
+                    <div class="tim-typo">
+                      <h2>
+                        <span class="tim-note">Small Tag</span>
+                        Header with small subtitle
+                        <br>
+                        <small>Use "small" tag for the headers</small>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -218,6 +230,7 @@
         </div>
       </div>
     </div>
-      </div>
-    </div>
-    {% endblock %}
+  </body>
+  
+  </html>
+  {% endblock %}

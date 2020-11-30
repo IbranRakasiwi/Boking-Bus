@@ -5,8 +5,16 @@ from . import models
 from django.contrib import messages
 
 # Create your views here.
+def Bus (request): 
+  
+    if request.method == 'GET': 
+  
+        # getting all the objects of hotel. 
+        Hotels = Hotel.objects.all()  
+        return render((request, 'display_hotel_images.html', 
+                     {'hotel_images' : Hotels})) 
 
-def tampil(request):
+def index (request):
     return render(request, 'pengguna/index.html')
 
 def user(request):
@@ -16,6 +24,15 @@ def user(request):
 def tabel (request):
    
     return render(request, 'pengguna/tabel.html')
+
+def icon (request):
+   
+    return render(request, 'pengguna/icon.html')
+
+
+def typo (request):
+   
+    return render(request, 'pengguna/typo.html')
 
 # PENGAJAR
 
