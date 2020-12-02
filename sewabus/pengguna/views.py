@@ -3,17 +3,12 @@ from django.shortcuts import render, redirect
 from . import models
 # from manga.form import FormManga
 from django.contrib import messages
+from django.conf import settings
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-def Bus (request): 
-  
-    if request.method == 'GET': 
-  
-        # getting all the objects of hotel. 
-        Hotels = Hotel.objects.all()  
-        return render((request, 'display_hotel_images.html', 
-                     {'hotel_images' : Hotels})) 
-
+@login_required(login_url=settings.LOGIN_URL)
 def index (request):
     return render(request, 'pengguna/index.html')
 
